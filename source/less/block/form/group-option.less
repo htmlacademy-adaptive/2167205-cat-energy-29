@@ -1,0 +1,43 @@
+.group-option {
+  margin-bottom: 21px;
+}
+
+.group-option__name {
+  margin-bottom: 37px;
+}
+
+.group-option__list {
+  width: 100%;
+  margin-left: 20px;
+}
+
+.group-option__item {
+  margin-bottom: 12px;
+  width: max-content;
+}
+
+@media (min-width: @table-width) {
+  .group-option {
+    padding-top: 0;
+    margin-bottom: 52px;
+  }
+
+  .group-option__name {
+    margin-bottom: 57px;
+  }
+
+  .group-option__list {
+    display: grid;
+    grid-template-columns: 222px 222px;
+    row-gap: 33px;
+    column-gap: 120px;
+    min-width: 768px;
+    margin-left: 72px;
+  }
+
+  .group-option__item {
+    margin: 0;
+    width: max-content;
+    height: 40px;
+  }
+}

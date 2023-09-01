@@ -1,0 +1,59 @@
+.statistic-result__list {
+  .zero-list();
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  width: max-content;
+  margin: 0 auto 20px;
+}
+
+.statistic-result__item {
+  width: 124px;
+  position: relative;
+  z-index: 10;
+
+  &::before {
+    content: "";
+    width: 124px;
+    height: 56px;
+    border: 1px solid #cdcdcd;
+    border-radius: 4px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+}
+
+.statistic-result__fact {
+  .zero-text();
+  margin: 14px 0 8px;
+  color: #000000;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.statistic-result__fact-label {
+  .zero-text();
+  position: relative;
+  text-align: center;
+  z-index: 10;
+  display: block;
+  background-color: inherit;
+}
+
+.statistic-result__total {
+  .zero-text();
+  color: #000000;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+}

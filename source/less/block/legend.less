@@ -1,0 +1,88 @@
+.legend {
+  margin-bottom: 49px;
+  padding: 0 30px;
+}
+
+.legend-wrapper {
+  margin: 0 auto;
+}
+
+.legend__title {
+  .zero-text();
+  margin-bottom: 40px;
+  color: #000000;
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+.legend__list {
+  .zero-list();
+}
+
+.legend__item {
+  position: relative;
+  padding-left: 80px;
+
+  &:not(:last-child) {
+    margin-bottom: 26px;
+  }
+}
+
+.legend__item--leave {
+  &::before {
+    content: "";
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("../img/leave-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.legend__item--powder {
+  &::before {
+    content: "";
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("../img/powder-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.legend__item--tableware {
+  &::before {
+    content: "";
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("../img/tableware-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.legend__item--clock {
+  &::before {
+    content: "";
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("../img/clock-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}

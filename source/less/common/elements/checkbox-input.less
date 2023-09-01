@@ -1,0 +1,49 @@
+.checkbox-input__label {
+  color: #444444;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  position: relative;
+  padding: 5px 0 5px 46px;
+  display: inline-block;
+  height: 30px;
+}
+
+.checkbox-input__checkbox {
+  appearance: none;
+  position: absolute;
+}
+
+.checkbox-input__box {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/checkbox-no-mobile.svg");
+  left: 0;
+  top: 0;
+}
+
+.checkbox-input__checkbox:checked + .checkbox-input__box {
+  background-image: url("../img/checkbox-yes-mobile.svg");
+}
+
+@media (min-width: @table-width) {
+  .checkbox-input__label {
+    font-size: 20px;
+    line-height: normal;
+    height: auto;
+    padding: 5px 0 5px 60px;
+  }
+
+  .checkbox-input__box {
+    width: 40px;
+    height: 40px;
+    background-image: url("../img/checkbox-no.svg");
+  }
+
+  .checkbox-input__checkbox:checked + .checkbox-input__box {
+    background-image: url("../img/checkbox-yes.svg");
+  }
+}

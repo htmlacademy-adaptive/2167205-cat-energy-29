@@ -1,0 +1,48 @@
+.links-list {
+  .zero-list();
+  position: relative;
+  padding: 40px 20px;
+}
+
+.links-list__item {
+  display: block;
+  position: relative;
+  margin-bottom: 37px;
+
+  &:not(:last-of-type)::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #d9d9d9;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+  }
+}
+
+.links-list__container {
+  display: block;
+  width: 128px;
+  height: 24px;
+  margin: 0 auto;
+}
+
+.links-list__logo {
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 128px;
+    height: 24px;
+    background-image: url("../img/logo-text-footer.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 1px;
+  }
+}
+
+.links-list__author {
+  width: 100%;
+}
