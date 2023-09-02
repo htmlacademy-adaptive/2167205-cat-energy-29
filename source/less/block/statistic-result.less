@@ -4,7 +4,7 @@
   flex-wrap: wrap;
   gap: 32px;
   width: max-content;
-  margin: 0 auto 20px;
+  margin: 0 auto 18px;
 }
 
 .statistic-result__item {
@@ -38,12 +38,24 @@
 }
 
 .statistic-result__fact-label {
+  position: relative;
+  z-index: 10;
+  background-color: #eaeaea;
+  display: inline-block;
+  margin-left: 16px;
+  padding: 0 5px;
+}
+
+.statistic-result__fact-content {
   .zero-text();
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 100%;
+  width: 80px;
   position: relative;
   text-align: center;
   z-index: 10;
-  display: block;
-  background-color: inherit;
+  display: inline-block;
 }
 
 .statistic-result__total {
