@@ -1,0 +1,26 @@
+.catalog {
+  margin-bottom: 24px;
+}
+
+.catalog__list {
+  .zero-list();
+}
+
+.catalog__item {
+  border-top: 1px solid #ebebeb;
+}
+
+.catalog__more {
+  border-bottom: 1px solid #ebebeb;
+}
+
+@media (min-width: @table-width) {
+  .catalog__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 511px);
+    grid-column-gap: 60px;
+    grid-row-gap: 60px;
+    padding: 0 30px;
+  }
+}

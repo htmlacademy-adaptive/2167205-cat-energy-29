@@ -22,3 +22,15 @@
     background-position: center center;
   }
 }
+
+@media (min-width: @table-width) {
+  .catalog-link {
+    font-size: 20px;
+    line-height: normal;
+
+    &::after {
+      top: 5px;
+      right: 0;
+    }
+  }
+}
