@@ -7,6 +7,7 @@
   line-height: 20px;
   text-transform: uppercase;
   width: 76px;
+  margin-bottom: 14px;
 }
 
 .card-text-container__description-list {
@@ -14,7 +15,6 @@
   grid-template-columns: 1fr 1fr;
   column-gap: 58px;
   margin: 0;
-  margin-top: 14px;
 }
 
 .card-text-container__description-termin {
@@ -32,4 +32,15 @@
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
+}
+
+@media (min-width: @table-width) {
+  .card-text-container__title {
+    font-size: 20px;
+    line-height: 24px;
+    width: 174px;
+    padding: 0 10px;
+    text-align: center;
+    margin: 0 auto 14px;
+  }
 }
