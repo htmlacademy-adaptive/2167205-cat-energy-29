@@ -1,7 +1,7 @@
 .hero__container {
   position: relative;
-  padding: 27px 0 203px 0;
-  min-height: 320px;
+  padding: 27px 0 164px 0;
+  min-height: 302px;
   z-index: 2;
   margin-bottom: 138px;
 
@@ -67,6 +67,74 @@
 .hero__button {
   .zero-link();
   display: block;
-  padding: 8px 44px;
-  margin: 0 30px;
+  padding: 11px 44px;
+  margin: 0 20px;
+}
+
+@media (min-width: @table-width) {
+  .hero {
+    position: relative;
+  }
+
+  .hero__container {
+    position: relative;
+    padding: 0;
+    z-index: 5;
+    margin: 0 120px 21px;
+    min-height: 180px;
+  }
+
+  .hero__container::before {
+    content: none;
+  }
+
+  .hero__container::after {
+    content: none;
+  }
+
+  .hero__title {
+    color: #000000;
+    font-size: 60px;
+    line-height: 60px;
+    width: 414px;
+    text-align: start;
+    margin: 0;
+    margin-bottom: 40px;
+  }
+
+  .hero__notation {
+    position: relative;
+    color: #000000;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    z-index: 5;
+    text-align: start;
+  }
+
+  .hero__button-wrapper {
+    position: relative;
+    margin: 0 20px;
+    padding: 29px 386px 526px 100px;
+  }
+
+  .hero__button-wrapper::after {
+    content: "";
+    position: absolute;
+    width: 709px;
+    height: 609px;
+    left: 10px;
+    bottom: 0;
+    background-image: url("../img/cat-food-table.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 2;
+  }
+
+  .hero__button {
+    position: relative;
+    padding: 17px 0;
+    margin: 0;
+    z-index: 5;
+  }
 }

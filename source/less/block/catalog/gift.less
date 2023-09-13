@@ -1,0 +1,31 @@
+.gift {
+  position: relative;
+  padding: 187px 60px 43px 59px;
+  background-image: url("../img/cat-gift-background-mobile.jpg");
+  background-color: #62a639;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.gift::before {
+  content: "";
+  width: 80px;
+  height: 82px;
+  position: absolute;
+  background-image: url("../img/icon-gift.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.gift__description {
+  .zero-text();
+  display: block;
+  text-align: center;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0 auto;
+}

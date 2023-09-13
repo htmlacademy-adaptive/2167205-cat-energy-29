@@ -1,11 +1,31 @@
 .header {
   position: relative;
   padding-top: 66px;
-  background: url("../img/logo-cat-energy.svg") no-repeat center 20px;
+  background: url("../img/logo-cat-energy.svg") no-repeat center 23px;
 }
 
 .header__logo {
   position: absolute;
   top: 13px;
-  left: 22px;
+  left: 19px;
+}
+
+@media (min-width: @table-width) {
+  .header {
+    display: flex;
+    padding: 25px 35px 0 30px;
+    background: url("../img/logo-cat-energy.svg") no-repeat;
+    background-position: 105px 41px;
+    margin-bottom: 68px;
+  }
+
+  .header__logo {
+    top: 25px;
+    left: 30px;
+  }
+
+  .header__nav {
+    margin-left: auto;
+    min-width: 436px;
+  }
 }

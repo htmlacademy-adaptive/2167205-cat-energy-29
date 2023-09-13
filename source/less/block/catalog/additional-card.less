@@ -1,0 +1,82 @@
+.additional-card {
+  padding: 13px 0 18px;
+}
+
+.additional-card__title {
+  .zero-text();
+  color: #222222;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.additional-card__price-list {
+  .zero-list();
+  margin-bottom: 14px;
+  margin-left: auto;
+}
+
+.additional-card__price-item {
+  display: flex;
+  gap: 50px;
+}
+
+.additional-card__unit {
+  text-align: start;
+}
+
+.additional-card__price {
+  margin-left: auto;
+}
+
+.additional-card__button {
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 10px 0;
+}
+
+@media (min-width: @table-width) {
+  .additional-card {
+    padding: 24px 36px 28px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .additional-card__title {
+    font-size: 20px;
+    line-height: 20px;
+    align-self: center;
+  }
+
+  .additional-card__price-wrapper {
+    margin-bottom: 14px;
+    margin-left: auto;
+    align-self: center;
+  }
+
+  .additional-card__price-list {
+    margin: 6px 0;
+    margin-left: auto;
+  }
+
+  .additional-card__unit {
+    width: max-content;
+    text-align: start;
+  }
+
+  .additional-card__price {
+    width: max-content;
+    margin: 0;
+    text-align: right;
+  }
+
+  .additional-card__button {
+    width: 100%;
+    margin-top: 15px;
+  }
+}
