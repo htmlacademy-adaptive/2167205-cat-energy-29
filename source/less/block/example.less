@@ -3,7 +3,7 @@
   background-color: #eaeaea;
 }
 
-.example-title {
+.example__title {
   .zero-text();
   color: #000000;
   font-family: "Oswald", sans-serif;
@@ -16,6 +16,10 @@
 
 .example__notation {
   .zero-text();
+  margin-bottom: 20px;
+}
+
+.example__statistic {
   margin-bottom: 20px;
 }
 
@@ -33,7 +37,7 @@
     bottom: 0;
     z-index: 1;
     width: 100%;
-    height: 462px;
+    height: 361px;
     background-color: #eaeaea;
   }
 
@@ -42,7 +46,7 @@
     z-index: 10;
   }
 
-  .example-title {
+  .example__title {
     font-size: 60px;
     line-height: 60px;
     margin-bottom: 60px;
@@ -52,5 +56,15 @@
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 55px;
+  }
+
+  .example__slider-wrapper {
+    background: transparent;
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .example__slider-wrapper {
+    background: transparent;
   }
 }

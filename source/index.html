@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 </head>
 
 <body class="body">
@@ -93,7 +97,7 @@
 
     <section class="main__example example">
       <div class="example__wrapper">
-        <h2 class="example-title">Живой пример</h2>
+        <h2 class="example__title">Живой пример</h2>
         <p class="example__notation">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
           Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по
           16 часов в день.</p>
@@ -114,24 +118,33 @@
           </ul>
           <p class="statistic-result__total">Затраты на питание: 15 000 РУБ.</p>
         </div>
+        <div class="example__slider-wrapper slider">
+          <ul class="slider__block">
+            <li class="slider__item slider__item--before slider__item--state-before"></li>
+            <li class="slider__item slider__item--after"></li>
+          </ul>
+          <button class="slider__button" type="button">
+            <span class="visually-hidden">Кнопка смещения слайдера влево или вправо</span>
+          </button>
+        </div>
       </div>
-
-      <!-- слайдер -->
     </section>
 
   </main>
   <footer class="body__footer footer">
     <div class="footer__contacts contacts">
-      <div class="contacts__address-container">
-        <h3 class="contacts__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h3>
-        <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-      </div>
-      <div class="contacts__map-image">
-        <div class="contacts__map">
-          <iframe class="map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6489728784836!2d30.32341217844548!3d59.93796674418744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1693936731454!5m2!1sru!2sru"
-            width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
+      <div class="contacts__wrapper">
+        <div class="contacts__address-container">
+          <h3 class="contacts__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h3>
+          <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        </div>
+        <div class="contacts__map-image">
+          <div class="contacts__map">
+            <iframe class="map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6489728784836!2d30.32341217844548!3d59.93796674418744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1693936731454!5m2!1sru!2sru"
+              width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
         </div>
       </div>
 
@@ -202,7 +215,7 @@
       </ul>
 
   </footer>
-
+<script src="./js/scripts.js"></script>
 </body>
 
 </html>

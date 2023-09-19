@@ -35,8 +35,32 @@
   }
 
   .group-option__item {
-    margin: 0 123px 0 0;
     width: 222px;
     height: 40px;
+    margin-bottom: 0;
+  }
+
+  .group-option__item:not(:last-child) {
+    margin-right: 123px;
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .group-option {
+    margin-bottom: 62px;
+  }
+
+  .group-option__list {
+    margin: 0 auto;
+    width: 1220px;
+    padding: 0;
+  }
+
+  .group-option__item {
+    margin-bottom: 0;
+  }
+
+  .group-option__item:not(:last-child) {
+    margin-right: 104px;
   }
 }
