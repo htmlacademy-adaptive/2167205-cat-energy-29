@@ -4,7 +4,7 @@
   flex-wrap: wrap;
   gap: 32px;
   width: max-content;
-  margin: 0 auto 20px;
+  margin: 0 auto 18px;
 }
 
 .statistic-result__item {
@@ -14,7 +14,7 @@
 
   &::before {
     content: "";
-    width: 124px;
+    width: 100%;
     height: 56px;
     border: 1px solid #cdcdcd;
     border-radius: 4px;
@@ -38,12 +38,24 @@
 }
 
 .statistic-result__fact-label {
+  position: relative;
+  z-index: 10;
+  background-color: #eaeaea;
+  display: inline-block;
+  margin-left: 16px;
+  padding: 0 5px;
+}
+
+.statistic-result__fact-content {
   .zero-text();
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 100%;
+  width: 80px;
   position: relative;
   text-align: center;
   z-index: 10;
-  display: block;
-  background-color: inherit;
+  display: inline-block;
 }
 
 .statistic-result__total {
@@ -56,4 +68,77 @@
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
+}
+
+@media (min-width: @table-width) {
+  .statistic-result {
+    display: flex;
+  }
+
+  .statistic-result__list {
+    margin: 0;
+    gap: 44px;
+  }
+
+  .statistic-result__item {
+    width: 162px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .statistic-result__item::before {
+    content: "";
+    width: 100%;
+    height: 72px;
+  }
+
+  .statistic-result__fact {
+    margin: 15px 0 10px;
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .statistic-result__fact-label {
+    background-color: #ffffff;
+    margin: 0 auto;
+    padding: 0 5px;
+  }
+
+  .statistic-result__fact-content {
+    font-size: 14px;
+    line-height: 14px;
+    width: max-content;
+  }
+
+  .statistic-result__total {
+    width: 180px;
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: auto;
+    margin-top: 6px;
+    margin-right: 3px;
+    text-align: end;
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .statistic-result {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .statistic-result__list {
+    margin-bottom: 45px;
+  }
+
+  .statistic-result__fact-label {
+    background-color: #eaeaea;
+  }
+
+  .statistic-result__total {
+    display: flex;
+    margin: 0;
+    width: 350px;
+    gap: 65px;
+  }
 }

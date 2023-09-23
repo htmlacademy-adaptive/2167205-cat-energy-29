@@ -7,16 +7,11 @@
 .links-list__item {
   display: block;
   position: relative;
-  margin-bottom: 37px;
+  padding-bottom: 18px;
+  margin-bottom: 20px;
 
-  &:not(:last-of-type)::after {
-    content: "";
-    width: 100%;
-    height: 1px;
-    background-color: #d9d9d9;
-    position: absolute;
-    bottom: -20px;
-    left: 0;
+  &:not(:last-of-type) {
+    border-bottom: 1px solid #d9d9d9;
   }
 }
 
@@ -45,4 +40,51 @@
 
 .links-list__author {
   width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: @table-width) {
+  .links-list {
+    display: flex;
+    gap: 99px;
+    position: relative;
+    margin: 0 auto;
+    width: 710px;
+    padding: 51px 0;
+    align-items: center;
+  }
+
+  .links-list__item {
+    margin: 0;
+    padding: 0;
+    width: 170px;
+
+    &:not(:last-of-type) {
+      border-bottom: none;
+    }
+  }
+
+  .links-list__container {
+    margin: 0;
+  }
+
+  .links-list__social {
+    margin-top: 8px;
+  }
+
+  .links-list__author {
+    display: flex;
+    position: relative;
+    margin-right: 0;
+  }
+}
+
+
+@media (min-width: @desctop-width) {
+  .links-list {
+    width: 1220px;
+    padding: 66px 0;
+    gap: 355px;
+  }
 }

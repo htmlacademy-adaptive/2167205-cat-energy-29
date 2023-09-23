@@ -8,7 +8,7 @@
 
 .group-option__list {
   width: 100%;
-  margin-left: 20px;
+  padding: 0 20px;
 }
 
 .group-option__item {
@@ -27,17 +27,40 @@
   }
 
   .group-option__list {
-    display: grid;
-    grid-template-columns: 222px 222px;
+    display: flex;
+    flex-wrap: wrap;
     row-gap: 33px;
-    column-gap: 120px;
     min-width: 768px;
-    margin-left: 72px;
+    padding: 0 0 0 72px;
   }
 
   .group-option__item {
-    margin: 0;
-    width: max-content;
+    width: 222px;
     height: 40px;
+    margin-bottom: 0;
+  }
+
+  .group-option__item:not(:last-child) {
+    margin-right: 123px;
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .group-option {
+    margin-bottom: 62px;
+  }
+
+  .group-option__list {
+    margin: 0 auto;
+    width: 1220px;
+    padding: 0;
+  }
+
+  .group-option__item {
+    margin-bottom: 0;
+  }
+
+  .group-option__item:not(:last-child) {
+    margin-right: 104px;
   }
 }

@@ -9,7 +9,7 @@
 }
 
 .form__button {
-  margin: 0 20px 21px;
+  margin-bottom: 21px;
 }
 
 .form__notation {
@@ -23,5 +23,19 @@
 
   .form__notation {
     margin-bottom: 0;
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .form__group-wrapper {
+    display: flex;
+    gap: 80px;
+    margin: 0 auto;
+    width: 1220px;
+    margin-bottom: 68px;
+  }
+
+  .form__button {
+    margin: 0 80px 0 0;
   }
 }

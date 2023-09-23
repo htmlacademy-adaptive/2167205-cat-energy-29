@@ -24,7 +24,7 @@
 .special-title__text {
   display: inline-block;
   background-color: #ffffff;
-  max-width: 226px;
+  max-width: 270px;
   padding: 0 20px;
   position: relative;
   z-index: 10;
@@ -43,5 +43,14 @@
   .special-title__text {
     margin-left: 51px;
     max-width: 560px;
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .special-title__text {
+    max-width: max-content;
+    margin: 0 72px;
+    padding: 0 38px;
+    display: block;
   }
 }

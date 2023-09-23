@@ -1,7 +1,7 @@
 .author {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  gap: 23px;
 }
 
 .author__link {
@@ -20,4 +20,14 @@
 
 .author__logo {
   margin-left: auto;
+}
+
+@media (min-width: @table-width) {
+  .author__name {
+    margin: 5px 0 0 7px;
+  }
+
+  .author__logo {
+    margin-top: 3px;
+  }
 }
