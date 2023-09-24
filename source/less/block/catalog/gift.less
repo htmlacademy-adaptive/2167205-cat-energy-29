@@ -1,10 +1,17 @@
 .gift {
   position: relative;
   padding: 187px 60px 43px 59px;
-  background-image: url("../img/cat-gift-background-mobile.jpg");
+  background-image: url("../img/cat-gift-background-m.jpg");
   background-color: #62a639;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+@media (min-resolution: 2dppx) {
+  .gift {
+    background-image: url("../img/cat-gift-background-m@2x.jpg");
+    background-size: cover;
+  }
 }
 
 .gift::before {
@@ -33,8 +40,15 @@
 @media (min-width: @table-width) {
   .gift {
     padding: 72px 123px 68px 420px;
-    background-image: url("../img/cat-gift-background-table.jpg");
+    background-image: url("../img/cat-gift-background-t.jpg");
     background-color: #62a639;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .gift {
+      background-image: url("../img/cat-gift-background-t@2x.jpg");
+      background-size: cover;
+    }
   }
 
   .gift::before {
@@ -52,8 +66,15 @@
   .gift {
     width: 245px;
     padding: 184px 41px 42px 42px;
-    background-image: url("../img/cat-gift-background-desctop.jpg");
+    background-image: url("../img/cat-gift-background-d.jpg");
     background-color: #62a639;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .gift {
+      background-image: url("../img/cat-gift-background-d@2x.jpg");
+      background-size: cover;
+    }
   }
 
   .gift::before {

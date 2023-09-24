@@ -5,6 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи каталог</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicon/16.svg" type="image">
+  <link rel="apple-touch-icon" href="img/favicon/apple-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="preload" href="fonts/oswald/oswaldregular.woff" as="font" type="font/woff" crossorigin="anonymous">
   <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
@@ -16,8 +20,9 @@
   <header class="body__header header">
     <a href="" class="header__logo">
       <picture>
-        <img class="header__logo-image header__logo-image--mobile" src="./img/logo-mobile.svg" alt="Наш логотип"
-          width="33" height="38">
+        <source media="(min-width: 1440px)" srcset="img/logo-d.svg" width="70" height="59">
+        <source media="(min-width: 768px)" srcset="img/logo-t.svg" width="60" height="55">
+        <img class="header__logo-image" src="img/logo-m.svg" alt="Наш логотип" width="33" height="38">
       </picture>
     </a>
 
@@ -52,7 +57,8 @@
           <div class="product-card__wrapper">
             <div class="product-card__image-container">
               <picture>
-                <img class="product-card__image" src="./img/catalog/chicken-500-m.png" alt="курица 500 грамм">
+                <source media="(min-width: 768px)" srcset="img/catalog/chicken-500-t.png 1x, img/catalog/chicken-500-t@2x.png 2x">
+                <img class="product-card__image" src="img/catalog/chicken-500-m.png" srcset="img/catalog/chicken-500-m@2x.png 2x" alt="курица 500 грамм">
               </picture>
             </div>
             <div class="product-card__text-container card-text-container">
@@ -81,7 +87,8 @@
           <div class="product-card__wrapper">
             <div class="product-card__image-container">
               <picture>
-                <img src="./img/catalog/chicken-1000-m.png" alt="курица 1000 грамм" class="product-card__image">
+                <source media="(min-width: 768px)" srcset="img/catalog/chicken-1000-t.png 1x, img/catalog/chicken-1000-t@2x.png 2x">
+                <img class="product-card__image" src="img/catalog/chicken-1000-m.png" srcset="img/catalog/chicken-1000-m@2x.png 2x" alt="курица 1000 грамм">
               </picture>
             </div>
             <div class="product-card__text-container card-text-container">
@@ -110,7 +117,8 @@
           <div class="product-card__wrapper">
             <div class="product-card__image-container">
               <picture>
-                <img src="./img/catalog/fish-500-m.png" alt="рыба 500 грамм" class="product-card__image">
+                <source media="(min-width: 768px)" srcset="img/catalog/fish-500-t.png 1x, img/catalog/fish-500-t@2x.png 2x">
+                <img class="product-card__image" src="img/catalog/fish-500-m.png" srcset="img/catalog/fish-500-m@2x.png 2x" alt="рыба 500 грамм">
               </picture>
             </div>
             <div class="product-card__text-container card-text-container">
@@ -139,7 +147,8 @@
           <div class="product-card__wrapper">
             <div class="product-card__image-container">
               <picture>
-                <img src="./img/catalog/fish-1000-m.png" alt="рыба 1000 грамм" class="product-card__image">
+                <source media="(min-width: 768px)" srcset="img/catalog/fish-1000-t.png 1x, img/catalog/fish-1000-t@2x.png 2x">
+                <img class="product-card__image" src="img/catalog/fish-1000-m.png" srcset="img/catalog/fish-1000-m@2x.png 2x" alt="рыба 1000 грамм">
               </picture>
             </div>
             <div class="product-card__text-container card-text-container">
@@ -168,7 +177,8 @@
           <div class="product-card__wrapper">
             <div class="product-card__image-container">
               <picture>
-                <img src="./img/catalog/buckweat-500-m.png" alt="греча 500 грамм" class="product-card__image">
+                <source media="(min-width: 768px)" srcset="img/catalog/buckwheat-500-t.png 1x, img/catalog/buckwheat-500-t@2x.png 2x">
+                <img class="product-card__image" src="img/catalog/buckwheat-500-m.png" srcset="img/catalog/buckwheat-500-m@2x.png 2x" alt="греча 500 грамм">
               </picture>
             </div>
             <div class="product-card__text-container card-text-container">
@@ -197,7 +207,8 @@
           <div class="product-card__wrapper">
             <div class="product-card__image-container">
               <picture>
-                <img src="./img/catalog/buckweat-1000-m.png" alt="греча 1000 грамм" class="product-card__image">
+                <source media="(min-width: 768px)" srcset="img/catalog/buckwheat-1000-t.png 1x, img/catalog/buckwheat-1000-t@2x.png 2x">
+                <img class="product-card__image" src="img/catalog/buckwheat-1000-m.png" srcset="img/catalog/buckwheat-1000-m@2x.png 2x" alt="греча 1000 грамм">
               </picture>
             </div>
             <div class="product-card__text-container card-text-container">
@@ -226,7 +237,8 @@
           <div class="product-card__wrapper">
             <div class="product-card__image-container">
               <picture>
-                <img src="./img/catalog/rice-500-m.png" alt="рис 500 грамм" class="product-card__image">
+                <source media="(min-width: 768px)" srcset="img/catalog/rice-500-t.png 1x, img/catalog/rice-500-t@2x.png 2x">
+                <img class="product-card__image" src="img/catalog/rice-500-m.png" srcset="img/catalog/rice-500-m@2x.png 2x" alt="рис 500 грамм">
               </picture>
             </div>
             <div class="product-card__text-container card-text-container">
