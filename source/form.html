@@ -5,6 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicon/16.svg" type="image">
+  <link rel="apple-touch-icon" href="img/favicon/apple-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="preload" href="fonts/oswald/oswaldregular.woff" as="font" type="font/woff" crossorigin="anonymous">
   <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
@@ -16,8 +20,9 @@
   <header class="body__header header">
     <a href="index.html" class="header__logo">
       <picture>
-        <img class="header__logo-image header__logo-image--mobile" src="./img/logo-mobile.svg" alt="Наш логотип"
-          width="33" height="38">
+        <source media="(min-width: 1440px)" srcset="img/logo-d.svg" width="70" height="59">
+        <source media="(min-width: 768px)" srcset="img/logo-t.svg" width="60" height="55">
+        <img class="header__logo-image" src="img/logo-m.svg" alt="Наш логотип" width="33" height="38">
       </picture>
     </a>
 
@@ -44,7 +49,7 @@
 
   <main class="form-main">
     <h1 class="form-main__title inner-title">Подбор программы</h1>
-    <p class="form-main__notation inner-text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+    <p class="form-main__notation inner-text">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
 
     <form action="#" method="get" class="form-main__form form">
       <div class="form__group-wrapper">

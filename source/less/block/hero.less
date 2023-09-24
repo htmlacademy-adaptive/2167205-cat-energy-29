@@ -12,7 +12,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    background-image: url("../img/cat-food-background-mobile.jpg");
+    background-image: url("../img/cat-food-background-m.jpg");
     background-color: #63a63b;
     background-repeat: no-repeat;
     background-position: center center;
@@ -28,10 +28,24 @@
     bottom: 0;
     left: 50%;
     transform: translateX(-50%) translateY(50%);
-    background-image: url("../img/cat-food-mobile.png");
+    background-image: url("../img/cat-food-m.png");
     background-repeat: no-repeat;
     background-position: center center;
     z-index: 5;
+  }
+}
+
+@media (min-resolution: 2dppx) {
+  .hero__container::before {
+    background-image: url("../img/cat-food-background-m@2x.jpg");
+    background-color: #63a63b;
+    width: 100%;
+    height: 100%;
+  }
+
+  .hero__container::after {
+    background-image: url("../img/cat-food-m@2x.png");
+    background-size: cover;
   }
 }
 
@@ -125,10 +139,17 @@
     height: 609px;
     left: 10px;
     bottom: 0;
-    background-image: url("../img/cat-food-table.png");
+    background-image: url("../img/cat-food-t.png");
     background-repeat: no-repeat;
     background-position: center center;
     z-index: 2;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .hero__button-wrapper::after {
+      background-image: url("../img/cat-food-t@2x.png");
+      background-size: cover;
+    }
   }
 
   .hero__button {

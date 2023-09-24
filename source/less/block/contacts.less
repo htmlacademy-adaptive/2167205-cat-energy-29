@@ -32,6 +32,13 @@
 
 .contacts__map-image {
   width: 100%;
+  background-image: url("../img/map-m.jpg");
+}
+
+@media (min-resolution: 2dppx) {
+  .contacts__map-image {
+    background-image: url("../img/map-m@2x.jpg");
+  }
 }
 
 
@@ -51,6 +58,19 @@
     font-size: 16px;
     line-height: 20px;
     width: 160px;
+  }
+
+  .contacts__map-image {
+    width: 100%;
+    background-image: url("../img/map-t.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .contacts__map-image {
+      background-image: url("../img/map-t@2x.jpg");
+    }
   }
 }
 
@@ -79,6 +99,13 @@
   .contacts__map-image {
     position: absolute;
     top: 0;
+    background-image: url("../img/map-d.jpg");
     z-index: 1;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .contacts__map-image {
+      background-image: url("../img/map-d@2x.jpg");
+    }
   }
 }
