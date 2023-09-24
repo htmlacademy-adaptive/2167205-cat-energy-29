@@ -11,10 +11,12 @@
 }
 
 .card-text-container__description-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 58px;
-  margin: 0;
+  .zero-list();
+}
+
+.card-text-container__description-group {
+  display: flex;
+  gap: 20px;
 }
 
 .card-text-container__description-termin {
@@ -23,6 +25,7 @@
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
+  width: 60px;
 }
 
 .card-text-container__description-details {
@@ -32,15 +35,30 @@
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
+  width: 60px;
+  margin-left: auto;
 }
 
 @media (min-width: @table-width) {
   .card-text-container__title {
     font-size: 20px;
     line-height: 24px;
-    width: 174px;
+    width: 100%;
     padding: 0 10px;
     text-align: center;
     margin: 0 auto 14px;
+  }
+
+  .card-text-container__description-group {
+    border-bottom: 1px solid #cdcdcd;
+    padding: 8px 0;
+  }
+
+  .card-text-container__description-termin {
+    font-size: 16px;
+  }
+
+  .card-text-container__description-details {
+    font-size: 16px;
   }
 }

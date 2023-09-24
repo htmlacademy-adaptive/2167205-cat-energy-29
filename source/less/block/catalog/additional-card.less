@@ -42,7 +42,7 @@
 
 @media (min-width: @table-width) {
   .additional-card {
-    padding: 24px 36px 28px;
+    padding: 25px 37px 26px;
     display: flex;
     flex-wrap: wrap;
   }
@@ -53,30 +53,68 @@
     align-self: center;
   }
 
-  .additional-card__price-wrapper {
-    margin-bottom: 14px;
-    margin-left: auto;
-    align-self: center;
-  }
-
   .additional-card__price-list {
     margin: 6px 0;
     margin-left: auto;
   }
 
+  .additional-card__price-item {
+    gap: 43px;
+  }
+
   .additional-card__unit {
-    width: max-content;
-    text-align: start;
+    width: 150px;
+    text-align: end;
   }
 
   .additional-card__price {
-    width: max-content;
-    margin: 0;
-    text-align: right;
+    width: 50px;
+    margin-top: -1px;
+    margin-right: 2px;
+    text-align: end;
   }
 
   .additional-card__button {
     width: 100%;
     margin-top: 15px;
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .additional-card {
+    padding: 15px 2px 16px;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  .additional-card__title {
+    margin: 0;
+    width: 170px;
+  }
+
+  .additional-card__price-list {
+    margin: 0;
+    margin-left: 155px;
+  }
+
+  .additional-card__price-item {
+    gap: 93px;
+  }
+
+  .additional-card__unit {
+    width: 150px;
+    text-align: start;
+    margin-top: 2px;
+  }
+
+  .additional-card__price {
+    margin-top: 2px;
+    text-align: start;
+  }
+
+  .additional-card__button {
+    margin: 0;
+    margin-left: 33px;
+    width: 244px;
   }
 }
