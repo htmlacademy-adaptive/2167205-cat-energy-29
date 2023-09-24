@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи каталог</title>
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 </head>
 
 <body class="body">
@@ -28,7 +32,7 @@
           <a href="index.html" class="nav-list__link">Главная</a>
         </li>
         <li class="nav-list__item">
-          <a href="catalog.html" class="nav-list__link nav-list__link--current">Каталог продукции</a>
+          <a href="#" class="nav-list__link nav-list__link--current">Каталог продукции</a>
         </li>
         <li class="nav-list__item">
           <a href="form.html" class="nav-list__link">Подбор программы</a>
@@ -48,20 +52,24 @@
           <div class="product-card__wrapper">
             <div class="product-card__image-container">
               <picture>
-                <img src="./img/product-chicken-500g-mobile.png" alt="курица 500 грамм" class="product-card__image">
+                <img class="product-card__image" src="./img/catalog/chicken-500-m.png" alt="курица 500 грамм">
               </picture>
             </div>
             <div class="product-card__text-container card-text-container">
               <h3 class="card-text-container__title">Cat Energy PRO 500 г</h3>
               <dl class="card-text-container__description-list">
-                <dt class="card-text-container__description-termin">Масса</dt>
-                <dd class="card-text-container__description-details">500 г</dd>
-
-                <dt class="card-text-container__description-termin">Вкус</dt>
-                <dd class="card-text-container__description-details">Курица</dd>
-
-                <dt class="card-text-container__description-termin">Цена</dt>
-                <dd class="card-text-container__description-details">700 ₽</dd>
+                <div class="card-text-container__description-group">
+                  <dt class="card-text-container__description-termin">Масса</dt>
+                  <dd class="card-text-container__description-details">500 г</dd>
+                </div>
+                <div class="card-text-container__description-group">
+                  <dt class="card-text-container__description-termin">Вкус</dt>
+                  <dd class="card-text-container__description-details">Курица</dd>
+                </div>
+                <div class="card-text-container__description-group">
+                  <dt class="card-text-container__description-termin">Цена</dt>
+                  <dd class="card-text-container__description-details">700 ₽</dd>
+                </div>
               </dl>
             </div>
           </div>
@@ -73,20 +81,24 @@
           <div class="product-card__wrapper">
             <div class="product-card__image-container">
               <picture>
-                <img src="./img/product-chicken-1000g-mobile.png" alt="курица 1000 грамм" class="product-card__image">
+                <img src="./img/catalog/chicken-1000-m.png" alt="курица 1000 грамм" class="product-card__image">
               </picture>
             </div>
             <div class="product-card__text-container card-text-container">
               <h3 class="card-text-container__title">Cat Energy PRO 1000 г</h3>
               <dl class="card-text-container__description-list">
-                <dt class="card-text-container__description-termin">Масса</dt>
-                <dd class="card-text-container__description-details">1000 г</dd>
-
-                <dt class="card-text-container__description-termin">Вкус</dt>
-                <dd class="card-text-container__description-details">Курица</dd>
-
-                <dt class="card-text-container__description-termin">Цена</dt>
-                <dd class="card-text-container__description-details">1000 ₽</dd>
+                <div class="card-text-container__description-group">
+                  <dt class="card-text-container__description-termin">Масса</dt>
+                  <dd class="card-text-container__description-details">1000 г</dd>
+                </div>
+                <div class="card-text-container__description-group">
+                  <dt class="card-text-container__description-termin">Вкус</dt>
+                  <dd class="card-text-container__description-details">Курица</dd>
+                </div>
+                <div class="card-text-container__description-group">
+                  <dt class="card-text-container__description-termin">Цена</dt>
+                  <dd class="card-text-container__description-details">1000 ₽</dd>
+                </div>
               </dl>
             </div>
           </div>
@@ -98,20 +110,24 @@
           <div class="product-card__wrapper">
             <div class="product-card__image-container">
               <picture>
-                <img src="./img/product-fish-500g-mobile.png" alt="рыба 500 грамм" class="product-card__image">
+                <img src="./img/catalog/fish-500-m.png" alt="рыба 500 грамм" class="product-card__image">
               </picture>
             </div>
             <div class="product-card__text-container card-text-container">
               <h3 class="card-text-container__title">Cat Energy PRO 500 г</h3>
               <dl class="card-text-container__description-list">
-                <dt class="card-text-container__description-termin">Масса</dt>
-                <dd class="card-text-container__description-details">500 г</dd>
-
-                <dt class="card-text-container__description-termin">Вкус</dt>
-                <dd class="card-text-container__description-details">Рыба</dd>
-
-                <dt class="card-text-container__description-termin">Цена</dt>
-                <dd class="card-text-container__description-details">700 ₽</dd>
+                <div class="card-text-container__description-group">
+                  <dt class="card-text-container__description-termin">Масса</dt>
+                  <dd class="card-text-container__description-details">500 г</dd>
+                </div>
+                <div class="card-text-container__description-group">
+                  <dt class="card-text-container__description-termin">Вкус</dt>
+                  <dd class="card-text-container__description-details">Рыба</dd>
+                </div>
+                <div class="card-text-container__description-group">
+                  <dt class="card-text-container__description-termin">Цена</dt>
+                  <dd class="card-text-container__description-details">700 ₽</dd>
+                </div>
               </dl>
             </div>
           </div>
@@ -123,20 +139,24 @@
           <div class="product-card__wrapper">
             <div class="product-card__image-container">
               <picture>
-                <img src="./img/product-fish-1000g-mobile.png" alt="рыба 1000 грамм" class="product-card__image">
+                <img src="./img/catalog/fish-1000-m.png" alt="рыба 1000 грамм" class="product-card__image">
               </picture>
             </div>
             <div class="product-card__text-container card-text-container">
               <h3 class="card-text-container__title">Cat Energy PRO 1000 г</h3>
               <dl class="card-text-container__description-list">
-                <dt class="card-text-container__description-termin">Масса</dt>
-                <dd class="card-text-container__description-details">1000 г</dd>
-
-                <dt class="card-text-container__description-termin">Вкус</dt>
-                <dd class="card-text-container__description-details">Рыба</dd>
-
-                <dt class="card-text-container__description-termin">Цена</dt>
-                <dd class="card-text-container__description-details">1000 ₽</dd>
+                <div class="card-text-container__description-group">
+                  <dt class="card-text-container__description-termin">Масса</dt>
+                  <dd class="card-text-container__description-details">1000 г</dd>
+                </div>
+                <div class="card-text-container__description-group">
+                  <dt class="card-text-container__description-termin">Вкус</dt>
+                  <dd class="card-text-container__description-details">Рыба</dd>
+                </div>
+                <div class="card-text-container__description-group">
+                  <dt class="card-text-container__description-termin">Цена</dt>
+                  <dd class="card-text-container__description-details">1000 ₽</dd>
+                </div>
               </dl>
             </div>
           </div>
@@ -148,20 +168,24 @@
           <div class="product-card__wrapper">
             <div class="product-card__image-container">
               <picture>
-                <img src="./img/product-buckwheat-500g-mobile.png" alt="греча 500 грамм" class="product-card__image">
+                <img src="./img/catalog/buckweat-500-m.png" alt="греча 500 грамм" class="product-card__image">
               </picture>
             </div>
             <div class="product-card__text-container card-text-container">
               <h3 class="card-text-container__title">Cat Energy slim 500 г</h3>
               <dl class="card-text-container__description-list">
-                <dt class="card-text-container__description-termin">Масса</dt>
-                <dd class="card-text-container__description-details">500 г</dd>
-
-                <dt class="card-text-container__description-termin">Вкус</dt>
-                <dd class="card-text-container__description-details">Гречка</dd>
-
-                <dt class="card-text-container__description-termin">Цена</dt>
-                <dd class="card-text-container__description-details">400 ₽</dd>
+                <div class="card-text-container__description-group">
+                  <dt class="card-text-container__description-termin">Масса</dt>
+                  <dd class="card-text-container__description-details">500 г</dd>
+                </div>
+                <div class="card-text-container__description-group">
+                  <dt class="card-text-container__description-termin">Вкус</dt>
+                  <dd class="card-text-container__description-details">Гречка</dd>
+                </div>
+                <div class="card-text-container__description-group">
+                  <dt class="card-text-container__description-termin">Цена</dt>
+                  <dd class="card-text-container__description-details">400 ₽</dd>
+                </div>
               </dl>
             </div>
           </div>
@@ -173,20 +197,24 @@
           <div class="product-card__wrapper">
             <div class="product-card__image-container">
               <picture>
-                <img src="./img/product-buckwheat-1000g-mobile.png" alt="греча 1000 грамм" class="product-card__image">
+                <img src="./img/catalog/buckweat-1000-m.png" alt="греча 1000 грамм" class="product-card__image">
               </picture>
             </div>
             <div class="product-card__text-container card-text-container">
               <h3 class="card-text-container__title">Cat Energy slim 1000 г</h3>
               <dl class="card-text-container__description-list">
-                <dt class="card-text-container__description-termin">Масса</dt>
-                <dd class="card-text-container__description-details">1000 г</dd>
-
-                <dt class="card-text-container__description-termin">Вкус</dt>
-                <dd class="card-text-container__description-details">Гречка</dd>
-
-                <dt class="card-text-container__description-termin">Цена</dt>
-                <dd class="card-text-container__description-details">700 ₽</dd>
+                <div class="card-text-container__description-group">
+                  <dt class="card-text-container__description-termin">Масса</dt>
+                  <dd class="card-text-container__description-details">1000 г</dd>
+                </div>
+                <div class="card-text-container__description-group">
+                  <dt class="card-text-container__description-termin">Вкус</dt>
+                  <dd class="card-text-container__description-details">Гречка</dd>
+                </div>
+                <div class="card-text-container__description-group">
+                  <dt class="card-text-container__description-termin">Цена</dt>
+                  <dd class="card-text-container__description-details">700 ₽</dd>
+                </div>
               </dl>
             </div>
           </div>
@@ -198,20 +226,24 @@
           <div class="product-card__wrapper">
             <div class="product-card__image-container">
               <picture>
-                <img src="./img/product-rice-500g-mobile.png" alt="рис 500 грамм" class="product-card__image">
+                <img src="./img/catalog/rice-500-m.png" alt="рис 500 грамм" class="product-card__image">
               </picture>
             </div>
             <div class="product-card__text-container card-text-container">
               <h3 class="card-text-container__title">Cat Energy slim 500 г</h3>
               <dl class="card-text-container__description-list">
-                <dt class="card-text-container__description-termin">Масса</dt>
-                <dd class="card-text-container__description-details">500 г</dd>
-
-                <dt class="card-text-container__description-termin">Вкус</dt>
-                <dd class="card-text-container__description-details">Рис</dd>
-
-                <dt class="card-text-container__description-termin">Цена</dt>
-                <dd class="card-text-container__description-details">500 ₽</dd>
+                <div class="card-text-container__description-group">
+                  <dt class="card-text-container__description-termin">Масса</dt>
+                  <dd class="card-text-container__description-details">500 г</dd>
+                </div>
+                <div class="card-text-container__description-group">
+                  <dt class="card-text-container__description-termin">Вкус</dt>
+                  <dd class="card-text-container__description-details">Рис</dd>
+                </div>
+                <div class="card-text-container__description-group">
+                  <dt class="card-text-container__description-termin">Цена</dt>
+                  <dd class="card-text-container__description-details">500 ₽</dd>
+                </div>
               </dl>
             </div>
           </div>
@@ -275,11 +307,10 @@
             <a href="" class="additional-card__button button">Заказать</a>
           </li>
         </ul>
-      </div>
-
-      <div class="additional-prod__gift gift">
-        <h2 class="gift__title visually-hidden">Получите подарок при покупке в нашнм магазине</h2>
-        <p class="gift__description">Закажите все и&nbsp;получите чехол для кота в подарок!</p>
+        <div class="additional-prod__gift gift">
+          <h2 class="gift__title visually-hidden">Получите подарок при покупке в нашнм магазине</h2>
+          <p class="gift__description">Закажите все и&nbsp;получите чехол для кота в подарок!</p>
+        </div>
       </div>
 
     </section>
@@ -288,16 +319,18 @@
 
   <footer class="body__footer footer">
     <div class="footer__contacts contacts">
-      <div class="contacts__address-container">
-        <h3 class="contacts__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h3>
-        <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-      </div>
-      <div class="contacts__map-image">
-        <div class="contacts__map">
-          <iframe class="map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6489728784836!2d30.32341217844548!3d59.93796674418744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1693936731454!5m2!1sru!2sru"
-            width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
+      <div class="contacts__wrapper">
+        <div class="contacts__address-container">
+          <h3 class="contacts__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h3>
+          <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        </div>
+        <div class="contacts__map-image">
+          <div class="contacts__map">
+            <iframe class="map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6489728784836!2d30.32341217844548!3d59.93796674418744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1693936731454!5m2!1sru!2sru"
+              width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
         </div>
       </div>
 
@@ -368,7 +401,7 @@
       </ul>
 
   </footer>
-
+  <script src="./js/scripts.js"></script>
 </body>
 
 </html>

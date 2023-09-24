@@ -15,7 +15,7 @@
     display: flex;
     padding: 25px 35px 0 30px;
     background: url("../img/logo-cat-energy.svg") no-repeat;
-    background-position: 105px 41px;
+    background-position: 103px 41px;
     margin-bottom: 68px;
   }
 
@@ -27,5 +27,25 @@
   .header__nav {
     margin-left: auto;
     min-width: 436px;
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .header {
+    padding: 0;
+    padding-top: 59px;
+    background: url("../img/logo-cat-energy-d.svg") no-repeat;
+    background-position: 85px 74px;
+    margin: 0 auto 78px;
+    width: 1220px;
+  }
+
+  .header__logo {
+    top: 62px;
+    left: 21px;
+  }
+
+  .header__nav {
+    min-width: 477px;
   }
 }

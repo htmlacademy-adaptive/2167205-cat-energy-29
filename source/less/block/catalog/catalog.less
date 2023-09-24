@@ -33,3 +33,20 @@
     border: none;
   }
 }
+
+@media (min-width: @desctop-width) {
+  .catalog {
+    margin: 0 auto 76px;
+    width: 1220px;
+  }
+
+  .catalog__list {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 511px);
+    grid-column-gap: 80px;
+    grid-row-gap: 63px;
+    padding: 0;
+    width: 100%;
+  }
+}
+

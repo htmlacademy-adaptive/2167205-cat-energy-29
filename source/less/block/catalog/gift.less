@@ -29,3 +29,39 @@
   line-height: 20px;
   margin: 0 auto;
 }
+
+@media (min-width: @table-width) {
+  .gift {
+    padding: 72px 123px 68px 420px;
+    background-image: url("../img/cat-gift-background-table.jpg");
+    background-color: #62a639;
+  }
+
+  .gift::before {
+    top: 57px;
+    left: 77px;
+    transform: none;
+  }
+
+  .gift__description {
+    text-align: start;
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .gift {
+    width: 245px;
+    padding: 184px 41px 42px 42px;
+    background-image: url("../img/cat-gift-background-desctop.jpg");
+    background-color: #62a639;
+  }
+
+  .gift::before {
+    top: 55px;
+    left: 84px;
+  }
+
+  .gift__description {
+    text-align: center;
+  }
+}

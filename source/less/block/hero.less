@@ -138,3 +138,51 @@
     z-index: 5;
   }
 }
+
+@media (min-width: @desctop-width) {
+  .hero {
+    position: relative;
+    width: 1220px;
+    margin: 0 auto 83px;
+    margin-top: 117px;
+  }
+
+  .hero__wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-bottom: 183px;
+  }
+
+  .hero__wrapper::before {
+    content: "";
+    width: 552px;
+    height: 499px;
+    background-image: url("../img/cat-food-desctop.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    right: -113px;
+    top: -82px;
+    z-index: 5;
+    transform: translateX(50%);
+  }
+
+  .hero__container {
+    margin: 0 auto 52px;
+    min-width: 452px;
+    min-height: 180px;
+  }
+
+  .hero__button-wrapper {
+    margin: 0;
+    margin-left: 79px;
+    padding: 0;
+    width: 244px;
+  }
+
+  .hero__button-wrapper::after {
+    content: none;
+  }
+}

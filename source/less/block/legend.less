@@ -222,3 +222,44 @@
     z-index: -1;
   }
 }
+
+@media (min-width: @desctop-width) {
+  .legend {
+    margin: 0 auto 86px;
+    padding: 0;
+    border-bottom: none;
+    width: 1220px;
+  }
+
+  .legend__list {
+    display: flex;
+    gap: 82px;
+    padding: 0;
+  }
+
+  .legend__item {
+    width: 250px;
+    margin-bottom: 0;
+    padding: 112px 0 45px 0;
+  }
+
+  .legend__item--leave::after {
+    content: "";
+    right: 45px;
+  }
+
+  .legend__item--powder::after {
+    content: "";
+    right: 8px;
+  }
+
+  .legend__item--tableware::after {
+    content: "";
+    right: 8px;
+  }
+
+  .legend__item--clock::after {
+    content: "";
+    right: -2px;
+  }
+}

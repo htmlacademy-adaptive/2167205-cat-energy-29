@@ -6,6 +6,53 @@
   position: absolute;
   top: -50px;
   right: 0;
+
+  &::before {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 3px;
+    right: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.header-nav--js .header-nav__toggle {
+  display: block;
+}
+
+
+.header-nav--closed .header-nav__toggle {
+  &::before {
+    background-image: url("../img/toggle.svg");
+  }
+}
+
+.header-nav--opened .header-nav__toggle {
+  &::before {
+    background-image: url("../img/toggle-cross.svg");
+  }
+}
+
+.header-nav--closed .header-nav__list {
+  display: none;
+}
+
+@media (min-width: @table-width) {
+  .header-nav__toggle {
+    display: none;
+  }
+
+  .header-nav--closed .header-nav__list {
+    display: flex;
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .header-nav__toggle::before {
+    display: none;
+  }
 }
 
 @media (min-width: @table-width) {

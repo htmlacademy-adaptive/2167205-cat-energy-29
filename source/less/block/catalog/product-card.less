@@ -47,7 +47,7 @@
   }
 
   .product-card__wrapper {
-    padding: 0 36px;
+    padding: 0 35px;
     position: inherit;
     z-index: 10;
     flex-direction: column;
@@ -61,7 +61,7 @@
   }
 
   .product-card__text-container {
-    width: 252px;
+    width: 100%;
     flex-grow: 1;
   }
 
@@ -69,3 +69,14 @@
     margin: 0 37px 39px 39px;
   }
 }
+
+@media (min-width: @desctop-width) {
+  .product-card__wrapper {
+    padding: 0 34px 0 40px;
+  }
+
+  .product-card__text-container {
+    width: 171px;
+  }
+}
+
