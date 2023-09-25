@@ -180,7 +180,7 @@
     content: "";
     width: 552px;
     height: 499px;
-    background-image: url("../img/cat-food-desctop.png");
+    background-image: url("../img/cat-food-d.png");
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
@@ -188,6 +188,13 @@
     top: -82px;
     z-index: 5;
     transform: translateX(50%);
+  }
+
+  @media (min-resolution: 2dppx) {
+    .hero__wrapper::before {
+      background-image: url("../img/cat-food-d@2x.png");
+      background-size: cover;
+    }
   }
 
   .hero__container {
