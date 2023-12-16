@@ -9,7 +9,6 @@
 
 .toggle::before {
   content: "";
-  /* display: none; */
   width: 24px;
   height: 24px;
   position: absolute;
@@ -24,13 +23,24 @@
   width: 24px;
   height: 24px;
   position: absolute;
-  top: 3px;
-  right: 15px;
+  top: 5px;
+  right: 21px;
   background-image: url("../img/toggle-cross.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 @media (min-width: @table-width) {
-  display: none;
+  .toggle {
+    display: none;
+    cursor: auto;
+  }
+
+  .toggle::before {
+    display: none;
+  }
+
+  .toggle--cross::before {
+    display: none;
+  }
 }

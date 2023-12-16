@@ -9,7 +9,7 @@
   <link rel="icon" href="img/favicon/16.svg" type="image">
   <link rel="apple-touch-icon" href="img/favicon/apple-icon.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style.min.css">
   <link rel="preload" href="fonts/oswald/oswaldregular.woff" as="font" type="font/woff" crossorigin="anonymous">
   <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/lato/Lato-Regular.woff" as="font" type="font/woff" crossorigin="anonymous">
@@ -19,9 +19,9 @@
 <body class="body">
   <header class="body__header header"><a href="" class="header__logo">
       <picture>
-        <source media="(min-width: 1440px)" srcset="img/logo-d.svg" width="70" height="59">
-        <source media="(min-width: 768px)" srcset="img/logo-t.svg" width="60" height="55"><img
-          class="header__logo-image" src="img/logo-m.svg" alt="Наш логотип" width="33" height="38">
+        <source media="(min-width: 1440px)" srcset="img/logo-d.svg" width="205" height="60">
+        <source media="(min-width: 768px)" srcset="img/logo-t.svg" width="175" height="55">
+        <img class="header__logo-image" src="img/logo-m.svg" alt="Наш логотип" width="33" height="38">
       </picture>
     </a>
     <nav class="header__nav header-nav"><button class="header-nav__toggle toggle toggle--cross"><span
@@ -42,10 +42,11 @@
           <div class="product-card__wrapper">
             <div class="product-card__image-container">
               <picture>
-                <source media="(min-width: 768px)"
-                  srcset="img/catalog/chicken-500-t.png, img/catalog/chicken-500-t@2x.png 2x"><img
-                  class="product-card__image" src="img/catalog/chicken-500-m.png"
-                  srcset="img/catalog/chicken-500-m@2x.png 2x" alt="курица 500 грамм">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/chicken-500-t.webp 1x, img/catalog/chicken-500-t@2x.webp 2x">
+                <source type="image/webp" srcset="img/catalog/chicken-500-m.webp 1x, img/catalog/chicken-500-m@2x.webp 2x">
+
+                <source media="(min-width: 768px)" srcset="img/catalog/chicken-500-t.png 1x, img/catalog/chicken-500-t@2x.png 2x">
+                <img class="product-card__image" src="img/catalog/chicken-500-m.png" srcset="img/catalog/chicken-500-m@2x.png 2x" alt="курица 500 грамм">
               </picture>
             </div>
             <div class="product-card__text-container card-text-container">
@@ -72,10 +73,11 @@
           <div class="product-card__wrapper">
             <div class="product-card__image-container">
               <picture>
-                <source media="(min-width: 768px)"
-                  srcset="img/catalog/chicken-1000-t.png, img/catalog/chicken-1000-t@2x.png 2x"><img
-                  class="product-card__image" src="img/catalog/chicken-1000-m.png"
-                  srcset="img/catalog/chicken-1000-m@2x.png 2x" alt="курица 1000 грамм">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/chicken-1000-t.webp 1x, img/catalog/chicken-1000-t@2x.webp 2x">
+                <source type="image/webp" srcset="img/catalog/chicken-1000-m.webp 1x, img/catalog/chicken-1000-m@2x.webp 2x">
+
+                <source media="(min-width: 768px)" srcset="img/catalog/chicken-1000-t.png 1x, img/catalog/chicken-1000-t@2x.png 2x">
+                <img class="product-card__image" src="img/catalog/chicken-1000-m.png" srcset="img/catalog/chicken-1000-m@2x.png 2x" alt="курица 1000 грамм">
               </picture>
             </div>
             <div class="product-card__text-container card-text-container">
@@ -102,9 +104,11 @@
           <div class="product-card__wrapper">
             <div class="product-card__image-container">
               <picture>
-                <source media="(min-width: 768px)"
-                  srcset="img/catalog/fish-500-t.png, img/catalog/fish-500-t@2x.png 2x"><img class="product-card__image"
-                  src="img/catalog/fish-500-m.png" srcset="img/catalog/fish-500-m@2x.png 2x" alt="рыба 500 грамм">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/fish-500-t.webp 1x, img/catalog/fish-500-t@2x.webp 2x">
+                <source type="image/webp" srcset="img/catalog/fish-500-m.webp 1x, img/catalog/fish-500-m@2x.webp 2x">
+
+                <source media="(min-width: 768px)" srcset="img/catalog/fish-500-t.png 1x, img/catalog/fish-500-t@2x.png 2x">
+                <img class="product-card__image" src="img/catalog/fish-500-m.png" srcset="img/catalog/fish-500-m@2x.png 2x" alt="рыба 500 грамм">
               </picture>
             </div>
             <div class="product-card__text-container card-text-container">
@@ -131,10 +135,11 @@
           <div class="product-card__wrapper">
             <div class="product-card__image-container">
               <picture>
-                <source media="(min-width: 768px)"
-                  srcset="img/catalog/fish-1000-t.png, img/catalog/fish-1000-t@2x.png 2x"><img
-                  class="product-card__image" src="img/catalog/fish-1000-m.png"
-                  srcset="img/catalog/fish-1000-m@2x.png 2x" alt="рыба 1000 грамм">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/fish-1000-t.webp 1x, img/catalog/fish-1000-t@2x.webp 2x">
+                <source type="image/webp" srcset="img/catalog/fish-1000-m.webp 1x, img/catalog/fish-1000-m@2x.webp 2x">
+
+                <source media="(min-width: 768px)" srcset="img/catalog/fish-1000-t.png 1x, img/catalog/fish-1000-t@2x.png 2x">
+                <img class="product-card__image" src="img/catalog/fish-1000-m.png" srcset="img/catalog/fish-1000-m@2x.png 2x" alt="рыба 1000 грамм">
               </picture>
             </div>
             <div class="product-card__text-container card-text-container">
@@ -161,10 +166,11 @@
           <div class="product-card__wrapper">
             <div class="product-card__image-container">
               <picture>
-                <source media="(min-width: 768px)"
-                  srcset="img/catalog/buckwheat-500-t.png, img/catalog/buckwheat-500-t@2x.png 2x"><img
-                  class="product-card__image" src="img/catalog/buckwheat-500-m.png"
-                  srcset="img/catalog/buckwheat-500-m@2x.png 2x" alt="греча 500 грамм">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/buckwheat-500-t.webp 1x, img/catalog/buckwheat-500-t@2x.webp 2x">
+                <source type="image/webp" srcset="img/catalog/buckwheat-500-m.webp 1x, img/catalog/buckwheat-500-m@2x.webp 2x">
+
+                <source media="(min-width: 768px)" srcset="img/catalog/buckwheat-500-t.png 1x, img/catalog/buckwheat-500-t@2x.png 2x">
+                <img class="product-card__image" src="img/catalog/buckwheat-500-m.png" srcset="img/catalog/buckwheat-500-m@2x.png 2x" alt="греча 500 грамм">
               </picture>
             </div>
             <div class="product-card__text-container card-text-container">
@@ -191,10 +197,11 @@
           <div class="product-card__wrapper">
             <div class="product-card__image-container">
               <picture>
-                <source media="(min-width: 768px)"
-                  srcset="img/catalog/buckwheat-1000-t.png, img/catalog/buckwheat-1000-t@2x.png 2x"><img
-                  class="product-card__image" src="img/catalog/buckwheat-1000-m.png"
-                  srcset="img/catalog/buckwheat-1000-m@2x.png 2x" alt="греча 1000 грамм">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/buckwheat-1000-t.webp 1x, img/catalog/buckwheat-1000-t@2x.webp 2x">
+                <source type="image/webp" srcset="img/catalog/buckwheat-1000-m.webp 1x, img/catalog/buckwheat-1000-m@2x.webp 2x">
+
+                <source media="(min-width: 768px)" srcset="img/catalog/buckwheat-1000-t.png 1x, img/catalog/buckwheat-1000-t@2x.png 2x">
+                <img class="product-card__image" src="img/catalog/buckwheat-1000-m.png" srcset="img/catalog/buckwheat-1000-m@2x.png 2x" alt="греча 1000 грамм">
               </picture>
             </div>
             <div class="product-card__text-container card-text-container">
@@ -221,9 +228,11 @@
           <div class="product-card__wrapper">
             <div class="product-card__image-container">
               <picture>
-                <source media="(min-width: 768px)"
-                  srcset="img/catalog/rice-500-t.png, img/catalog/rice-500-t@2x.png 2x"><img class="product-card__image"
-                  src="img/catalog/rice-500-m.png" srcset="img/catalog/rice-500-m@2x.png 2x" alt="рис 500 грамм">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/rice-500-t.webp 1x, img/catalog/rice-500-t@2x.webp 2x">
+                <source type="image/webp" srcset="img/catalog/rice-500-m.webp 1x, img/catalog/rice-500-m@2x.webp 2x">
+
+                <source media="(min-width: 768px)" srcset="img/catalog/rice-500-t.png 1x, img/catalog/rice-500-t@2x.png 2x">
+                <img class="product-card__image" src="img/catalog/rice-500-m.png" srcset="img/catalog/rice-500-m@2x.png 2x" alt="рис 500 грамм">
               </picture>
             </div>
             <div class="product-card__text-container card-text-container">
@@ -243,12 +252,14 @@
                 </div>
               </dl>
             </div>
-          </div><a href="" class="product-card__button button">Заказать</a>
+          </div>
+          <a href="" class="product-card__button button">Заказать</a>
         </li>
-        <li class="catalog__item catalog__more more"><button class="more__plus"></button>
+        <li class="catalog__item catalog__more more">
+          <button class="more__plus"></button>
           <h3 class="more__title">Показать еще 100500 товаров</h3>
-          <p class="more__notation">На самом деле вкусов гораздо больше!</p><a href="#"
-            class="more__button button__second">показать все</a>
+          <p class="more__notation">На самом деле вкусов гораздо больше!</p>
+          <a href="#" class="more__button button__second">показать все</a>
         </li>
       </ul>
     </section>
@@ -261,7 +272,8 @@
             <h3 class="additional-card__title">Сахарозаменитель</h3>
             <ul class="additional-card__price-list">
               <li class="additional-card__price-item"><span class="additional-card__unit">1 упаковка (100 г)</span>
-                <span class="additional-card__price">200 ₽</span></li>
+                <span class="additional-card__price">200 ₽</span>
+              </li>
             </ul><a href="" class="additional-card__button button">Заказать</a>
           </li>
           <li class="additional-prod__item additional-card">

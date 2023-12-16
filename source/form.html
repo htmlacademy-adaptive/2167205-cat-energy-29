@@ -9,7 +9,7 @@
   <link rel="icon" href="img/favicon/16.svg" type="image">
   <link rel="apple-touch-icon" href="img/favicon/apple-icon.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style.min.css">
   <link rel="preload" href="fonts/oswald/oswaldregular.woff" as="font" type="font/woff" crossorigin="anonymous">
   <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/lato/Lato-Regular.woff" as="font" type="font/woff" crossorigin="anonymous">
@@ -17,11 +17,12 @@
 </head>
 
 <body class="body">
-  <header class="body__header header"><a href="index.html" class="header__logo">
+  <header class="body__header header">
+    <a href="index.html" class="header__logo">
       <picture>
-        <source media="(min-width: 1440px)" srcset="img/logo-d.svg" width="70" height="59">
-        <source media="(min-width: 768px)" srcset="img/logo-t.svg" width="60" height="55"><img
-          class="header__logo-image" src="img/logo-m.svg" alt="Наш логотип" width="33" height="38">
+        <source media="(min-width: 1440px)" srcset="img/logo-d.svg" width="205" height="60">
+        <source media="(min-width: 768px)" srcset="img/logo-t.svg" width="175" height="55">
+        <img class="header__logo-image" src="img/logo-m.svg" alt="Наш логотип" width="33" height="38">
       </picture>
     </a>
     <nav class="header__nav header-nav"><button class="header-nav__toggle toggle toggle--cross"><span
@@ -76,27 +77,29 @@
               (владельца кота)</span></h2>
         </div>
         <ul class="form__list group-contact__list">
-          <li class="form__item group-contact__item text-input"><label for="owner-email"
-              class="text-input__label">E-mail:*</label> <input type="email" class="text-input__input" id="owner-email"
-              value="кuklachev@gmail.com" placeholder="Введите ваш email" requaired> <svg class="text-input__icon"
-              width="20" height="20">
-              <use href="img/sprite.svg#email-stroke"></use>
-            </svg></li>
-          <li class="form__item group-contact__item text-input"><label for="owner-phone"
-              class="text-input__label">Телефон:*</label> <input type="tel" class="text-input__input" id="owner-phone"
-              value="8 (960) 900-60-90" placeholder="Введите контактный номер телефона"
-              pattern="[0-9]{1} ([0-9]{3}) [0-9]{3}-[0-9]{2}-[0-9]{2}" requaired> <svg class="text-input__icon"
-              width="20" height="20">
-              <use href="img/sprite.svg#phone-stroke"></use>
+          <li class="form__item group-contact__item text-input">
+            <label for="owner-email" class="text-input__label">E-mail:*</label>
+            <input type="email" class="text-input__input" id="owner-email" value="кuklachev@gmail.com" placeholder="Введите ваш email" requaired>
+            <svg class="text-input__icon" width="20" height="20">
+              <use href="img/sprite.svg#email-icon"></use>
+            </svg>
+          </li>
+          <li class="form__item group-contact__item text-input">
+            <label for="owner-phone" class="text-input__label">Телефон:*</label>
+            <input type="tel" class="text-input__input" id="owner-phone" value="8 (960) 900-60-90" placeholder="Введите контактный номер телефона"
+              pattern="[0-9]{1} ([0-9]{3}) [0-9]{3}-[0-9]{2}-[0-9]{2}" requaired>
+              <svg class="text-input__icon" width="20" height="20">
+              <use class="text-input__icon-image" href="img/sprite.svg#phone-icon"></use>
             </svg></li>
         </ul>
       </fieldset>
       <fieldset class="form__group group-comment">
-        <h2 class="form__name group-comment__name special-title"><span class="special-title__text">Комментарий</span>
+        <h2 class="form__name group-comment__name special-title">
+          <span class="special-title__text">Комментарий</span>
         </h2>
-        <div class="form__item group-comment__item textarea"><label for="comment"
-            class="textarea__label visually-hidden"></label> <textarea id="comment" type="text" class="textarea__text"
-            name="comment" placeholder="Расскажите обо всех повадках кота"></textarea></div>
+        <div class="form__item group-comment__item textarea">
+          <label for="comment" class="textarea__label visually-hidden"></label>
+            <textarea id="comment" type="text" class="textarea__text" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea></div>
       </fieldset>
       <fieldset class="form__group group-option">
         <h2 class="form__name group-option__name special-title"><span class="special-title__text">Дополнительно</span>

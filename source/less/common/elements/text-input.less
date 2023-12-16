@@ -34,6 +34,29 @@
   position: absolute;
   top: 12px;
   right: 12px;
+  stroke: #000000;
+}
+
+.text-input__input:hover {
+  outline: 1px solid #cdcdcd;
+}
+
+.text-input__input:focus {
+  outline: 2px solid #444444;
+  border-radius: 0;
+}
+
+.text-input__input:focus + .text-input__icon {
+  stroke: #68b738;
+}
+
+.text-input__input::grammar-error {
+  outline: 2px solid #ff8282;
+  border-radius: 0;
+}
+
+.text-input__input::grammar-error + .text-input__icon {
+  stroke: #ff8282;
 }
 
 @media (min-width: @table-width) {
@@ -47,11 +70,14 @@
     line-height: normal;
     padding: 11px 0 11px 20px;
     height: 52px;
+    border: none;
+    outline: 1px solid #e7e7e7;
   }
 
   .text-input__icon {
     top: 15px;
     right: 14px;
+    stroke: #000000;
   }
 }
 

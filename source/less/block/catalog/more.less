@@ -9,7 +9,6 @@
   margin: 0 auto 23px;
   display: block;
   border: none;
-  cursor: pointer;
   background-color: #ffffff;
   background-image: url("../img/plus-mobile.svg");
   background-repeat: no-repeat;
@@ -38,13 +37,16 @@
 
 .more__button {
   display: block;
-  text-decoration: none;
+  position: relative;
   padding: 10px 0;
+  z-index: 10;
 }
 
 @media (min-width: @table-width) {
   .more {
     padding: 134px 37px 38px 38px;
+    position: relative;
+    z-index: 10;
   }
 
   .more::before {
@@ -55,6 +57,7 @@
     position: absolute;
     bottom: 0;
     left: 0;
+    z-index: 1;
   }
 
   .more__plus {

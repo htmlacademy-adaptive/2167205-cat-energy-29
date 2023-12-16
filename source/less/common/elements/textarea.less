@@ -9,8 +9,17 @@
   line-height: 18px;
   text-transform: uppercase;
   padding: 14px;
-  border: 1px solid #e7e7e7;
+  outline: 1px solid #e7e7e7;
+  border: none;
   resize: none;
+}
+
+.textarea__text:hover {
+  outline: 1px solid #cdcdcd;
+}
+
+.textarea__text:focus {
+  outline: 1px solid #444444;
 }
 
 @media (min-width: @table-width) {
