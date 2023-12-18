@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="icon" href="favicon.ico">
-  <link rel="icon" href="img/favicon/16.svg" type="image">
+  <link rel="icon" href="img/favicon/16.svg">
   <link rel="apple-touch-icon" href="img/favicon/apple-icon.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="./css/style.min.css">
@@ -44,10 +44,10 @@
           <ul class="form__list group-cat__list">
             <li class="form__item group-cat__item text-input"><label for="cat_name"
                 class="text-input__label">Имя:*</label> <input type="text" class="text-input__input" id="cat_name"
-                name="name" value="Барсик" placeholder="Введите имя питомца" requaired></li>
+                name="name" value="Барсик" placeholder="Введите имя питомца" required></li>
             <li class="form__item group-cat__item text-input"><label for="cat-weight" class="text-input__label">Вес
                 (кг):*</label> <input type="text" class="text-input__input" id="cat-weight" name="weight" value="7"
-                placeholder="Введите вес питомца" requaired></li>
+                placeholder="Введите вес питомца" required></li>
             <li class="form__item group-cat__item text-input"><label for="cat-age"
                 class="text-input__label">Возраст&nbsp;(лет):</label> <input type="text" class="text-input__input"
                 id="cat-age" name="age" placeholder="Введите возраст питомца" value="7"></li>
@@ -79,7 +79,7 @@
         <ul class="form__list group-contact__list">
           <li class="form__item group-contact__item text-input">
             <label for="owner-email" class="text-input__label">E-mail:*</label>
-            <input type="email" class="text-input__input" id="owner-email" value="кuklachev@gmail.com" placeholder="Введите ваш email" requaired>
+            <input type="email" class="text-input__input" id="owner-email" value="кuklachev@gmail.com" placeholder="Введите ваш email" required>
             <svg class="text-input__icon" width="20" height="20">
               <use href="img/sprite.svg#email-icon"></use>
             </svg>
@@ -87,7 +87,7 @@
           <li class="form__item group-contact__item text-input">
             <label for="owner-phone" class="text-input__label">Телефон:*</label>
             <input type="tel" class="text-input__input" id="owner-phone" value="8 (960) 900-60-90" placeholder="Введите контактный номер телефона"
-              pattern="[0-9]{1} ([0-9]{3}) [0-9]{3}-[0-9]{2}-[0-9]{2}" requaired>
+              pattern="[0-9]{1} ([0-9]{3}) [0-9]{3}-[0-9]{2}-[0-9]{2}" required>
               <svg class="text-input__icon" width="20" height="20">
               <use class="text-input__icon-image" href="img/sprite.svg#phone-icon"></use>
             </svg></li>
@@ -99,7 +99,7 @@
         </h2>
         <div class="form__item group-comment__item textarea">
           <label for="comment" class="textarea__label visually-hidden"></label>
-            <textarea id="comment" type="text" class="textarea__text" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea></div>
+            <textarea id="comment" class="textarea__text" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea></div>
       </fieldset>
       <fieldset class="form__group group-option">
         <h2 class="form__name group-option__name special-title"><span class="special-title__text">Дополнительно</span>
@@ -138,32 +138,47 @@
               referrerpolicy="no-referrer-when-downgrade"></iframe></div>
         </div>
       </div>
-      <ul class="footer__links links-list">
-        <li class="links-list__item">
-          <div class="links-list__container"><a href="index.html" class="links-list__logo"></a></div>
-        </li>
-        <li class="links-list__item links-list__social social">
+      <div class="footer__links links-list">
+        <div class="links-list__item">
+          <div class="links-list__container">
+            <a href="index.html" class="links-list__logo"></a>
+          </div>
+        </div>
+        <div class="links-list__item links-list__social social">
           <ul class="social__list">
-            <li class="social__item"><a href="" class="social__link"><span class="visually-hidden">мы в контакте</span>
+            <li class="social__item">
+              <a href="" class="social__link">
+                <span class="visually-hidden">мы в контакте</span>
                 <svg class="social__linc-icon" width="28" height="22">
                   <use href="img/sprite.svg#vkontakte"></use>
-                </svg></a></li>
+                </svg>
+              </a>
+            </li>
             <li class="social__item"><a href="" class="social__link"><span class="visually-hidden">мы в ютубе</span>
                 <svg class="social__linc-icon" width="28" height="22">
                   <use href="img/sprite.svg#youtube"></use>
-                </svg></a></li>
-            <li class="social__item"><a href="" class="social__link"><span class="visually-hidden">мы в телеграм</span>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="" class="social__link">
+                <span class="visually-hidden">мы в телеграм</span>
                 <svg class="social__linc-icon" width="28" height="22">
                   <use href="img/sprite.svg#telegram"></use>
-                </svg></a></li>
+                </svg>
+              </a>
+            </li>
           </ul>
-        </li>
-        <li class="links-list__item links-list__author"><a href="#" class="author author__link">
-            <p class="author__name">HTML Academy</p><svg class="author__logo" width="27" height="35">
+        </div>
+        <div class="links-list__item links-list__author">
+          <a href="#" class="author">
+            <p class="author__name">HTML Academy</p>
+            <svg class="author__logo" width="27" height="35">
               <use href="img/sprite.svg#author-logo"></use>
             </svg>
-          </a></li>
-      </ul>
+          </a>
+        </div>
+      </div>
     </div>
   </footer>
   <script src="./js/scripts.js"></script>

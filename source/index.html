@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="icon" href="favicon.ico">
-  <link rel="icon" href="img/favicon/16.svg" type="image">
+  <link rel="icon" href="img/favicon/16.svg">
   <link rel="apple-touch-icon" href="img/favicon/apple-icon.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="./css/style.min.css">
@@ -89,14 +89,16 @@
           <div class="example__statistic statistic-result">
             <ul class="statistic-result__list">
               <li class="statistic-result__item">
-                <p class="statistic-result__fact">5 КГ</p><span class="statistic-result__fact-label">
+                <p class="statistic-result__fact">5 КГ</p>
+                <div class="statistic-result__fact-label">
                   <p class="statistic-result__fact-content">снижение веса</p>
-                </span>
+                </div>
               </li>
               <li class="statistic-result__item">
-                <p class="statistic-result__fact">60 ДНЕЙ</p><span class="statistic-result__fact-label">
+                <p class="statistic-result__fact">60 ДНЕЙ</p>
+                <div class="statistic-result__fact-label">
                   <p class="statistic-result__fact-content">затрачено времени</p>
-                </span>
+                </div>
               </li>
             </ul>
             <div class="statistic-result__total"><span class="statistic-result__name">Затраты на питание:</span> <span
@@ -129,13 +131,13 @@
               referrerpolicy="no-referrer-when-downgrade"></iframe></div>
         </div>
       </div>
-      <ul class="footer__links links-list">
-        <li class="links-list__item">
+      <div class="footer__links links-list">
+        <div class="links-list__item">
           <div class="links-list__container">
             <a href="index.html" class="links-list__logo"></a>
           </div>
-        </li>
-        <li class="links-list__item links-list__social social">
+        </div>
+        <div class="links-list__item links-list__social social">
           <ul class="social__list">
             <li class="social__item">
               <a href="" class="social__link">
@@ -160,15 +162,16 @@
               </a>
             </li>
           </ul>
-        </li>
-        <li class="links-list__item links-list__author">
-          <a href="#" class="author author__link">
+        </div>
+        <div class="links-list__item links-list__author">
+          <a href="#" class="author">
             <p class="author__name">HTML Academy</p>
             <svg class="author__logo" width="27" height="35">
               <use href="img/sprite.svg#author-logo"></use>
             </svg>
-          </a></li>
-      </ul>
+          </a>
+        </div>
+      </div>
     </div>
   </footer>
   <script src="./js/scripts.js"></script>

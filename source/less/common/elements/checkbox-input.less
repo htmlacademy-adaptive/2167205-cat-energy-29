@@ -1,6 +1,6 @@
 .checkbox-input__label {
   color: #444444;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
@@ -9,6 +9,8 @@
   padding: 5px 0 5px 46px;
   display: inline-block;
   height: 30px;
+  cursor: pointer;
+  width: 188px;
 }
 
 .checkbox-input__label:disabled {
@@ -47,7 +49,15 @@
     background-image: url("../img/checkbox-no.svg");
   }
 
+  .checkbox-input__box:hover {
+    background-image: url("../img/checkbox-no-hover.svg");
+  }
+
   .checkbox-input__checkbox:checked + .checkbox-input__box {
     background-image: url("../img/checkbox-yes.svg");
+  }
+
+  .checkbox-input__checkbox:checked + .checkbox-input__box:hover {
+    background-image: url("../img/checkbox-yes-hover.svg");
   }
 }

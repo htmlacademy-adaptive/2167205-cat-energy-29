@@ -2,28 +2,31 @@
   padding: 25px 20px;
 }
 
-.more__plus {
-  width: 30px;
-  height: 30px;
-  padding: 0;
-  margin: 0 auto 23px;
-  display: block;
-  border: none;
-  background-color: #ffffff;
-  background-image: url("../img/plus-mobile.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
 .more__title {
   .zero-text();
   color: #111111;
   text-align: center;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  margin-top: 53px;
   margin-bottom: 8px;
+  position: relative;
+}
+
+.more__title::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+  background-image: url("../img/plus-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: -54px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .more__notation {
@@ -60,19 +63,19 @@
     z-index: 1;
   }
 
-  .more__plus {
-    width: 60px;
-    height: 60px;
-    margin: 0 auto 49px;
-    background-image: url("../img/plus.svg");
-  }
-
   .more__title {
-    margin: 0 auto;
+    margin: 108px auto 0;
     width: 134px;
     font-size: 20px;
     line-height: 22px;
     margin-bottom: 23px;
+  }
+
+  .more__title::before {
+    width: 60px;
+    height: 60px;
+    background-image: url("../img/plus.svg");
+    top: -108px;
   }
 
   .more__notation {
