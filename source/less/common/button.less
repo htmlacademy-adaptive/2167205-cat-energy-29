@@ -1,7 +1,7 @@
 .button {
   color: #ffffff;
   text-align: center;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -19,31 +19,30 @@
   color: rgba(255, 255, 255, 0.3);
 }
 
-.button__second {
+.button--second {
   color: #444444;
-  text-align: center;
-  font-family: "Oswald", sans-serif;
   font-size: 16px;
-  font-weight: 400;
   line-height: 20px;
-  text-transform: uppercase;
   background-color: #f2f2f2;
-  border: none;
   text-decoration: none;
-  cursor: pointer;
 }
 
-.button__second:hover {
+.button--second:hover {
   background-color: #ebebeb;
 }
 
-.button__second:active {
+.button--second:active {
   color: rgba(68, 68, 68, 0.3);
 }
 
 @media (min-width: @table-width) {
   .button {
     font-size: 20px;
+    line-height: 20px;
+  }
+
+  .button--second {
+    font-size: 16px;
     line-height: 20px;
   }
 }
